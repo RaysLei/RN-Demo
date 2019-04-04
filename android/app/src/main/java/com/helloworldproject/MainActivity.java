@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
                         @Override
                         public void onReactContextInitialized(ReactContext context) {
                             Log.i(MainActivity.class.getSimpleName(), "Runnable: onReactContextInitialized: " + (SystemClock.elapsedRealtime() - l));
+                            reactInstanceManager.removeReactInstanceEventListener(this);
                             if (isFinishing()) {
                                 return;
                             }
-                            reactInstanceManager.removeReactInstanceEventListener(this);
                             onStartMain(null);
                         }
                     });
