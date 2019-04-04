@@ -25,7 +25,7 @@ export default class NewRNLayout extends Component {
   render() { 
     return ( 
       <View style={styles.container}> 
-        <Text>NewRNLayout</Text>
+        <Text>React Native页面：NewRNLayout</Text>
       </View> 
     ); 
   } 

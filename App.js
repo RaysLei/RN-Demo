@@ -31,7 +31,7 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>{instructions}</Text>
         <Button
           onPress={this._onPressButton}
-          title="OK!"
+          title="Start MyActivity"
           />
       </View>
     );

@@ -2,7 +2,7 @@ package com.helloworldproject;
 
 import com.facebook.react.ReactActivity;
 
-public class SplashActivity extends ReactActivity {
+public class ReactMainActivity extends ReactActivity {
 
     /**
      * Returns the name of the main component registered from JavaScript.

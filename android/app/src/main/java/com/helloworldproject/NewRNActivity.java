@@ -4,7 +4,7 @@ import com.facebook.react.ReactActivity;
 
 import javax.annotation.Nullable;
 
-public class NewRNLayout extends ReactActivity {
+public class NewRNActivity extends ReactActivity {
 
     @Nullable
     @Override

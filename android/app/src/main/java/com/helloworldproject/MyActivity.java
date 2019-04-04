@@ -1,8 +1,8 @@
 package com.helloworldproject;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 public class MyActivity extends AppCompatActivity {
@@ -14,6 +14,6 @@ public class MyActivity extends AppCompatActivity {
     }
 
     public void onRNNewLayout(View view) {
-        startActivity(new Intent(this, NewRNLayout.class));
+        startActivity(new Intent(this, NewRNActivity.class));
     }
 }

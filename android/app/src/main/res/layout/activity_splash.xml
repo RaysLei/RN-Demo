@@ -32,7 +32,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:onClick="onStartMain"
-        android:text="Start MainActivity"
+        android:text="Start ReactMainActivity"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

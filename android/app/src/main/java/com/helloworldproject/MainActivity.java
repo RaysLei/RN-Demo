@@ -40,19 +40,22 @@ public class MainActivity extends AppCompatActivity {
                                 return;
                             }
                             reactInstanceManager.removeReactInstanceEventListener(this);
-                            startActivity(new Intent(MainActivity.this, SplashActivity.class));
+                            onStartMain(null);
                         }
                     });
                     // 加载js，此方法必须在UI线程运行，内部加载js会在其它子线程
                     reactInstanceManager.createReactContextInBackground();
                     Log.i(MainActivity.class.getSimpleName(), "Runnable: createReactContextInBackground: " + (SystemClock.elapsedRealtime() - l));
+                } else {
+                    onStartMain(null);
                 }
             }
         });
     }
 
     public void onStartMain(View view) {
-        startActivity(new Intent(this, SplashActivity.class));
+        startActivity(new Intent(this, ReactMainActivity.class));
+        finish();
     }
 
     @Override
